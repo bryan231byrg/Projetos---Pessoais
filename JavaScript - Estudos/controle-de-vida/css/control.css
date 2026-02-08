@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+h2 {
+  color: white;
+  margin-bottom: 20px;
+  animation: slideDown 0.6s ease-out;
+}
+
+p {
+  font-size: 24px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  width: 200px;
+  animation: fadeIn 0.8s ease-in;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  animation: fadeIn 0.8s ease-in;
+}
+
+#dano {
+  background-color: #e74c3c;
+  color: white;
+}
+
+#dano:hover {
+  background-color: #c0392b;
+  transform: scale(1.05);
+}
+
+#cura {
+  background-color: #2ecc71;
+  color: white;
+}
+
+#cura:hover {
+  background-color: #27ae60;
+  transform: scale(1.05);
+}
+
+#reset {
+  background-color: #95a5a6;
+  color: white;
+}
+
+#reset:hover {
+  background-color: #7f8c8d;
+  transform: scale(1.05);
+}
+
+#historico {
+  list-style: none;
+  margin-top: 20px;
+  color: white;
+  animation: slideUp 0.6s ease-out;
+}
+
+#historico li {
+  padding: 8px 15px;
+  margin: 5px 0;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  animation: slideIn 0.4s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
