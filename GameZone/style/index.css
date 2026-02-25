@@ -1,0 +1,196 @@
+/* ===========================
+   RESET / BASE
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, rgb(189, 158, 158), rgb(207, 239, 170));
+}
+
+/* ===========================
+   LAYOUT PRINCIPAL
+=========================== */
+main {
+  margin: 20px auto;
+  padding: 0 20px;
+  padding-top: 60px;
+}
+
+/* ===========================
+   HEADER / NAVBAR
+=========================== */
+header {
+  background: linear-gradient(135deg, rgb(79, 98, 220), rgb(190, 36, 190));
+  position: fixed;
+  top: 0;
+  z-index: auto;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#nav-links {
+  display: flex;
+  align-items: center;
+}
+
+#nav-links ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+#nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 18px;
+  transition: background-color 0.7s ease;
+  border-radius: 5px;
+}
+
+#nav-links ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* ===========================
+   HERO
+=========================== */
+.hero-content {
+  max-width: 700px;
+  margin: 0 auto;
+  display: grid;
+  gap: 12px;
+}
+
+#hero {
+  background: linear-gradient(135deg, rgb(79, 98, 220), rgb(190, 36, 190));
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#hero h1 {
+  color: white;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+#hero p {
+  color: white;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+#hero .btn-games {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff6f61;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+#hero .btn-games:hover {
+  background-color: #ff3b2e;
+  transform: translateY(-2px);
+}
+
+/* ===========================
+   CATEGORIAS
+=========================== */
+#categories {
+  margin: 40px auto;
+  padding: 20px;
+  background: linear-gradient(135deg, rgb(79, 98, 220), rgb(190, 36, 190));
+}
+
+.categories-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.categories-content h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: white;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 20px;
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.card h3 {
+  margin-top: 10px;
+  text-align: center;
+  color: white;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.btn-card {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  padding: 8px 16px;
+  background-color: #ff6f61;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-card:hover {
+  background-color: #ff3b2e;
+  transform: translateY(-2px);
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+  background: linear-gradient(135deg, rgb(79, 98, 220), rgb(190, 36, 190));
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
