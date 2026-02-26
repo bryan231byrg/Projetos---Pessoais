@@ -28,7 +28,7 @@ header {
   background: linear-gradient(135deg, rgb(79, 98, 220), rgb(190, 36, 190));
   position: fixed;
   top: 0;
-  z-index: auto;
+  z-index: 1000;
   color: white;
   justify-content: space-around;
   align-items: center;

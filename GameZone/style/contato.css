@@ -1,0 +1,237 @@
+/* ===========================
+   RESET / BASE
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, rgb(189, 158, 158), rgb(207, 239, 170));
+}
+
+/* ===========================
+   LAYOUT PRINCIPAL
+=========================== */
+main {
+  margin: 20px auto;
+  padding: 0 20px;
+  padding-top: 60px;
+}
+
+/* ===========================
+   HEADER / NAVBAR
+=========================== */
+header {
+  background: linear-gradient(135deg, rgb(79, 98, 220), rgb(190, 36, 190));
+  position: fixed;
+  top: 0;
+  z-index: auto;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#nav-links {
+  display: flex;
+  align-items: center;
+}
+
+#nav-links ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+#nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 18px;
+  transition: background-color 0.7s ease;
+  border-radius: 5px;
+}
+
+#nav-links ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* ===========================
+   CONTATO SECTION
+=========================== */
+#contato {
+  background: linear-gradient(135deg, rgb(79, 98, 220), rgb(190, 36, 190));
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 200px);
+}
+
+.contato-content {
+  max-width: 600px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.contato-content h1 {
+  font-size: 32px;
+  color: rgb(79, 98, 220);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contato-content p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 30px;
+  font-size: 16px;
+}
+
+/* ===========================
+   FORM STYLES
+=========================== */
+.form-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: rgb(79, 98, 220);
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  font-family: system-ui, Arial, sans-serif;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: rgb(79, 98, 220);
+  box-shadow: 0 0 8px rgba(79, 98, 220, 0.3);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+.btn-enviar {
+  padding: 12px 30px;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-enviar:hover {
+  background-color: #ff3b2e;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 111, 97, 0.4);
+}
+
+.btn-enviar:active {
+  transform: translateY(0);
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+  background: linear-gradient(135deg, rgb(79, 98, 220), rgb(190, 36, 190));
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 768px) {
+  .contato-content {
+    padding: 30px 20px;
+  }
+
+  .contato-content h1 {
+    font-size: 24px;
+  }
+
+  #nav-links ul {
+    gap: 10px;
+  }
+
+  #nav-links ul li a {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  main {
+    padding-top: 50px;
+  }
+
+  .contato-content {
+    padding: 20px;
+  }
+
+  .contato-content h1 {
+    font-size: 20px;
+  }
+
+  .contato-content p {
+    font-size: 14px;
+  }
+
+  header {
+    padding: 10px 15px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  #nav-links ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  #nav-links ul li a {
+    font-size: 12px;
+  }
+}

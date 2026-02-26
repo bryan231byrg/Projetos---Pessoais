@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/GameZone/style/contato.css" />
+    <title>GameZone - Contato</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">GameZone</div>
+        <nav id="nav-links">
+            <ul>
+                <li>
+                    <a href="../index.html"> Home</a>
+                </li>
+                <li>
+                    <a href="./games.html">Games</a>
+                </li>
+                <li>
+                    <a href="./sobre.html">Sobre</a>
+                </li>
+                <li>
+                    <a href="./contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contato">
+            <div class="contato-content">
+                <h1>Entre em Contato</h1>
+                <p>Tem uma sugestão ou dúvida? Envie sua mensagem para nós!</p>
+
+                <form class="form-contato" method="POST" action="#">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="assunto">Assunto:</label>
+                        <input type="text" id="assunto" name="assunto" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p>© 2026 GameZone. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+/* ===========================
+   RESET / BASE
+=========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, rgb(189, 158, 158), rgb(207, 239, 170));
+}
+
+/* ===========================
+   LAYOUT PRINCIPAL
+=========================== */
+main {
+  margin: 20px auto;
+  padding: 0 20px;
+  padding-top: 60px;
+}
+
+/* ===========================
+   HEADER / NAVBAR
+=========================== */
+header {
+  background: linear-gradient(135deg, rgb(79, 98, 220), rgb(190, 36, 190));
+  position: fixed;
+  top: 0;
+  z-index: auto;
+  color: white;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#nav-links {
+  display: flex;
+  align-items: center;
+}
+
+#nav-links ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+}
+
+#nav-links ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 18px;
+  transition: background-color 0.7s ease;
+  border-radius: 5px;
+}
+
+#nav-links ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* ===========================
+   SECTION SOBRE
+=========================== */
+#sobre {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.sobre-content {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.sobre-content h1 {
+  font-size: 3em;
+  color: rgb(79, 98, 220);
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.sobre-content p {
+  font-size: 1.1em;
+  color: #333;
+  line-height: 1.8;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ===========================
+   CARDS SECTION
+=========================== */
+.sobre-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 5px solid rgb(190, 36, 190);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+  font-size: 1.8em;
+  color: rgb(79, 98, 220);
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #555;
+  line-height: 1.8;
+  font-size: 1em;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+  background: linear-gradient(135deg, rgb(79, 98, 220), rgb(190, 36, 190));
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
